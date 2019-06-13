@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+ssh devx@68.183.128.14 <<EOF
+cd ~/node-api
+git pull
+npm install - production
+pm2 restart all
+exit
+EOF
